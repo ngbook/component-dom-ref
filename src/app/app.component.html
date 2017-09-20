@@ -1,0 +1,20 @@
+<div class="tpl-demo">
+    <div class="tpl1" #tpl1>
+        这是【ViewChild】的模板
+    </div>
+    <child-comp #tpl3>
+        <div class="child-wrapper" #contents>
+            content from app
+        </div>
+        <sub-comp></sub-comp>
+    </child-comp>
+
+    <div class="result-wrap">
+        <div class="item">
+            tpl1结果：{{result1}}
+        </div>
+        <div class="item">
+            tpl2结果：{{result2}}
+        </div>
+    </div>
+</div>
