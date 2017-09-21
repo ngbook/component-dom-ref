@@ -17,4 +17,15 @@
             tpl2结果：{{result2}}
         </div>
     </div>
+
+    <ul class="items">
+        <li class="item" *ngFor="let item of list;">
+            <ng-container [ngSwitch]="item % 2">
+                <div *ngSwitchCase="1">{{item}}-奇数</div>
+                <div *ngSwitchCase="0">{{item}}-偶数</div>
+                <div *ngSwitchDefault>不是数字</div>
+            </ng-container>
+        </li>
+    </ul>
+    
 </div>

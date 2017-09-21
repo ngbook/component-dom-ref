@@ -1,4 +1,17 @@
 <div class="child-comp">
     {{text}}
     <ng-content></ng-content>
+    <ng-template>
+        <div class="test"></div>
+    </ng-template>
 </div>
+
+<div *ngIf="collapsed; then showUp; else showDown">
+    这里的内容将被忽略
+</div>
+<ng-template #showDown>
+    <i class="down"></i>
+</ng-template>
+<ng-template #showUp>
+    <i class="up"></i>
+</ng-template>

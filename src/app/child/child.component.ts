@@ -12,6 +12,7 @@ import { SubComponent } from '../sub';
 })
 export class ChildComponent implements AfterViewInit {
     text = '这是子组件里的内容';
+    collapsed = true;
 
     @ContentChild('contents')
     tpl1: ElementRef;
