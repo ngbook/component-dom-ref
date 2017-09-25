@@ -57,10 +57,6 @@ export class AppComponent implements OnInit, AfterViewInit {
             console.log(this.tpl3.text);
         }
         console.log(this.tpls2); // 空的
-
-        // template
-        console.log(this.templateRef);
-        console.log(this.viewContainer);
     }
 
     ngAfterViewInit() {
